@@ -25,3 +25,5 @@ question:如果我在不同的目录执行了add .，会不会出错？
 answer:不会，只要属于同一个git仓库，但是git init 会初始化一个新的仓库，所以不能在不同的目录执行git init
 
 
+question: 如果我已经使用git追踪了一个文件，然后又将其添加到了.gitignore文件中，会发生什么情况？
+answer: 已经被 Git 追踪（tracked）的文件，即使后来写进 .gitignore，Git 也不会忽略它
