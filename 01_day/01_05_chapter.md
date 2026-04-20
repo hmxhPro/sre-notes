@@ -1,6 +1,11 @@
 # 01day note and summary
 [git](https://www.git-scm.com/book/zh/v2/)
 
+安装Git之后需要配置用户名和邮箱
+
+eg:
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
 
 note :git操纵的是快照流，如果下一个项目版本只改动了部分文件，git只记录改动的文件，而不是整个项目，原有未改动的文件不会复制，会使用软连接指向原有文件
 
@@ -13,4 +18,10 @@ git的三种状态
 1.committed
 2.staged
 3.modified
+
+工作流 工作区(修改文件的区域)-> 暂存区(选择性的暂存) -> 提交区(commit形成版本,此时可以回退)
+
+question:如果我在不同的目录执行了add .，会不会出错？
+answer:不会，只要属于同一个git仓库，但是git init 会初始化一个新的仓库，所以不能在不同的目录执行git init
+
 
